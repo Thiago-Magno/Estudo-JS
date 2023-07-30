@@ -455,27 +455,27 @@ Para fazer essa tranformação é bem simple:
 
 Funciona parece bem parecido com como criamos funções contrutoras usamos o new para cria-lo e depois passamos o que tem dentro dele como parametros
 
-    ```js
-        let array = new Array('a','b','c')
-        Console.log(array)
-    ```
-    No código acima criamos um array com os elementos a,b,c dentro dele
+```js
+    let array = new Array('a','b','c')
+    Console.log(array)
+```
+No código acima criamos um array com os elementos a,b,c dentro dele
 
-    ```js
-        let array = new Array(10)
-        Console.log(array)
-    ```
-    No código acima criamos um array com 10 espaços vazios dentro dele
+```js
+    let array = new Array(10)
+    Console.log(array)
+```
+No código acima criamos um array com 10 espaços vazios dentro dele
 
-    Se dentro de um array tiver uma função nós podemos executar essa função selecionando a posição dela e colocando paranteses depois 
+Se dentro de um array tiver uma função nós podemos executar essa função selecionando a posição dela e colocando paranteses depois 
 
-    ```js
-        let array[
-            "a",
-            2,
-            function(){ return"olá!"}] 
+```js
+    let array[
+        "a",
+         2,
+        function(){ return"olá!"}] 
         Console.log(array[2]())
-    ```
+```
 ### String para Array
 * O proprio ``Array`` já é um objeto disponivel para nó dentro do JS então podemos chamar metodos apartir dele no caso o ``from()`` espera strings como parametro então assim que colocamos a nossa varialvel string dentro dele ele a tranforma em array separando cada caracter em uma posição.
     ```js
