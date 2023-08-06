@@ -355,7 +355,7 @@ Para acessar esta funcionalidade basta colocar um ``.`` na frente do seu objeto,
     * Para convesão de Numero para String
     ```js
 
-        let string = "123"
+        let number = 123
         String(string)
     ```
 ### Contando caracteres
