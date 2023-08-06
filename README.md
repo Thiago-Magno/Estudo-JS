@@ -356,7 +356,7 @@ Para acessar esta funcionalidade basta colocar um ``.`` na frente do seu objeto,
     ```js
 
         let number = 123
-        String(string)
+        String(number)
     ```
 ### Contando caracteres
 
