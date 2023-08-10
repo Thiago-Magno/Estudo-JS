@@ -425,7 +425,7 @@ Para fazer essa tranformação é bem simple:
         Como já esta bem avaçado no arquivo vou começa a pular na 
         explicação que declaramos variaveis, já que apareceu bastante durante este.
 
-    * No código acima temos o ``phrase.split(" ")`` este ``.plit`` é quem faz a separação de cada palavra em uma posição do array de acordo com o parametro passado para ele qua no caso foi o espaço vazio.
+    * No código acima temos o ``phrase.split(" ")`` este ``.split`` é quem faz a separação de cada palavra em uma posição do array de acordo com o parametro passado para ele qua no caso foi o espaço vazio.
     * logo após temos o ``myArray.join`` a parte importante aq é o ``.join()`` já que é ele que faz a junção da frase novamente só que dessa vez utilizado o que demos a ele de parametro no codigo acima demos a ele ``.join("_")``
 
     Como um bonus algo muito util para verificar quantas palavra tem em uma frase assim como o tamanho de um array.
@@ -507,8 +507,8 @@ Nesta parte veremos como:
 * remover 1 ou mais de qualquer posição
     *  seleciona o array e depois coloca o metodo ``splice()``, este é parecido com o anterior no colocamo como parametro a posição de onde ele começa a tira e quantos itens ele pode remover;
         * ``array.splice(1,2)`` no caso remover dois itens começando da posição 1.
-* Econtrar a posição de um item;
-    *  declamos uma variavel para receber a posição do ele mento e o igualamos a o array, depois seleciona o array e depois coloca o metodo ``indexOf()``, nós colocamos o que quemos econtra dentro do array, se fosse um numero seria o numero que queremos encontrar, se for uma string colocamos a string e assim em diante;
+* Encontrar a posição de um item;
+    *  declamos uma variavel para receber a posição do ele mento e o igualamos a o array, depois seleciona o array e depois coloca o metodo ``indexOf()``, nós colocamos o que quemos encontra dentro do array, se fosse um numero seria o numero que queremos encontrar, se for uma string colocamos a string e assim em diante;
         ```js
             let index = array.indexOf("oi")
 
