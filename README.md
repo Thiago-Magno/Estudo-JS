@@ -1181,12 +1181,13 @@ O CCS no JS pode ser chamado no estilo camelCase ao inves de como no CSS padrão
  
 ### Evento JS
 
+#### Adiconando eventos via HTML
 Uma das maneira de adicionar eventos JS no HTML é colocar como atributo no proprio elemento HTML e temos varios destes atributos como: onmouseover, onclick, ondoubleclick e etc. No caso você colocaria o atributo e dentro dele a função que quer executar 
 
 ```html
     <button onclick='send()'>Enviar</button>
 ```
-
+#### Adicinando via teclado e JS
 Também podemos colocar eventos por teclado e para isso nos usamos o `onkeyup` toda vez que soltamos a tecla dentro do input ele roda a função, `onkeydown` toda vez que precionamos a tecla dentro do input ele roda a função e `onkeypress` executa a função sempre que pressionamos a tecla.
 
     ```js 
@@ -1199,3 +1200,6 @@ Também podemos colocar eventos por teclado e para isso nos usamos o `onkeyup` t
         }
 
     ```
+#### Adicionando evendo via JS
+
+
