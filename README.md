@@ -555,22 +555,22 @@ Como visto no exemplo acima que nós utilizamo o delete para deletar o atributo 
 
 ### Operadores aritiméticos
 
-* Multiplicação, o operador responsavel é o ``*``
-    *  ``console.log(2.3 * 2)``
+* Multiplicação, o operador responsavel é o `*`
+    *  `console.log(2.3 * 2)`
 
-* Divisão o operador responsavel é o ``/``
-    * ``console.log(2/ 2)``
+* Divisão o operador responsavel é o `/`
+    * `console.log(2/ 2)`
 
-* Soma o operador responsavel é o ``+``
-    * ``console.log(3 + 2)``
+* Soma o operador responsavel é o `+`
+    * `console.log(3 + 2)`
 
-* Subtração o operador responsavel é o ``-``
-    * ``console.log(5 - 2)``
+* Subtração o operador responsavel é o `-`
+    * `console.log(5 - 2)`
 
-* Resto da divisão o operador responsavel é o ``%``
-    * ``console.log(11 % 11)``
+* Resto da divisão o operador responsavel é o `%`
+    * `console.log(11 % 11)`
 
-* Incremeto o operador responsavel é o ``++``
+* Incremeto o operador responsavel é o `++`
     * No caso do incremento e do decremento é possivel colocar o operador antes do valor para fazer com que o a operação ocorra antes como no exemplo abaixo  
     * ````js
         let number = 1
@@ -580,26 +580,26 @@ Como visto no exemplo acima que nós utilizamo o delete para deletar o atributo 
     ```
  
 
-* Deremento o operador responsavel é o ``--``
-    * ````js
+* Deremento o operador responsavel é o `--`
+    * ```js
         let number = 1
         number++
         console.log(number++) // incremento comum
         console.log(++number) // Incremento antes da operação
     ```
 
-* Exponencial o operador responsavel é o ``**``
-    * ``console.log(2 ** 2)`` seria o equivalente a 2²
+* Exponencial o operador responsavel é o `*`
+    * `console.log(2 ** 2)` seria o equivalente a 2²
 
 ### Grouping operator
 
-Que assim como funciona na matermatica são os ``()`` eles possibilitão mudar a ordem de calculos matematico e tambem para o agrupamento de palavra no JS.
+Que assim como funciona na matermatica são os `()` eles possibilitão mudar a ordem de calculos matematico e tambem para o agrupamento de palavra no JS.
 
 ### Operadores de comparação
 
 Estes tipos de operadores comparão dois valores e retornão um boolean dizendo se a comparação é true ou false.
 
-- ``==`` este faz a comparação e diz se um parametro é igual ao outro
+- `==` este faz a comparação e diz se um parametro é igual ao outro
     - ```js
         let one = 1
         let three = 3
@@ -608,7 +608,7 @@ Estes tipos de operadores comparão dois valores e retornão um boolean dizendo 
         console.log(one == "1")
     ```
 
-- ``!=`` este verifica se um parametro/argumento é diferente do outro
+- `!=` este verifica se um parametro/argumento é diferente do outro
     - ```js
         let one = 1
         let three = 3
@@ -620,35 +620,35 @@ Estes tipos de operadores comparão dois valores e retornão um boolean dizendo 
 ### Operadores de comparação estrtritamente
 
 No geral são bem parecido mas eles testão se tanto o valor é igual, como também se o tipo de dado também é igual e são eles:
-- ``===`` este testa se o calor é igual no dois primeiros sinais de igualdade e no terceiro ele testa se o tipo do dado é igual a o do parametro também.
-    - ``console.log(three !== 1)``
-        ``console.log(one !== 1)``
-        ``console.log(one !== '1')``
+- `===` este testa se o calor é igual no dois primeiros sinais de igualdade e no terceiro ele testa se o tipo do dado é igual a o do parametro também.
+    - `console.log(three !== 1)`
+        `console.log(one !== 1)`
+        `console.log(one !== '1')`
 
-- ``!==`` este testa se o calor é diferente no dois primeiros sinais de igualdade e no terceiro ele testa se o tipo do dado difere do parametro.
+- `!==` este testa se o calor é diferente no dois primeiros sinais de igualdade e no terceiro ele testa se o tipo do dado difere do parametro.
 
 ### Operadores de comparação menor que e maior que(igual)
 
 Este são identicos a forma matematica sendo eles:
 
-* ``<`` menor que, utilizado quando, queremos quando um valor é menor que o outro;
-* ``>`` maior que, utilizado quando, queremos quando um valor é maior que o outro;
-* ``<=`` menor igual que, utilizado quando, queremos quando um valor é menor ou igual ao outro;
-* ``>=`` maior igual que, utilizado quando, queremos quando um valor é maior ou igual ao outro;
+* `<` menor que, utilizado quando, queremos quando um valor é menor que o outro;
+* `>` maior que, utilizado quando, queremos quando um valor é maior que o outro;
+* `<=` menor igual que, utilizado quando, queremos quando um valor é menor ou igual ao outro;
+* `>=` maior igual que, utilizado quando, queremos quando um valor é maior ou igual ao outro;
 
 ### Operadores Lógicos
 
 São dois valores do tipo booleano, que quando verificados retornão verdadeiro ou falso, são eles:
 
-- AND  // ``&&`` Este precisa que os dois sejão verdadeitros para que o argumento seja verdadeiro
-- OR   // ``||`` Este precisa que pelo menos um dos dois sejão verdadeitros para que o argumento seja verdadeiro
-- NOT  // ``!`` Este é a negação então tudo que for verdadeiro ele o torna falso, e oque for falso ele torna verdadeiro
+- AND  // `&&` Este precisa que os dois sejão verdadeitros para que o argumento seja verdadeiro
+- OR   // `||` Este precisa que pelo menos um dos dois sejão verdadeitros para que o argumento seja verdadeiro
+- NOT  // `!` Este é a negação então tudo que for verdadeiro ele o torna falso, e oque for falso ele torna verdadeiro
 
 ### Operador condicional ternário
 
 Depedendo da condição, nos recebemos valores diferentes
 Condição então valor 1 se não valor 2
-``condition ? value 1 : value2`` 
+`condition ? value 1 : value2` 
 
 ```js
     let age = 17
@@ -661,7 +661,7 @@ No exemplo acima temos o codigo verificando se uma pessoa tema a idade correta p
 ### Operador de String
 
 É a concatenação de duas string, em outras palavras seria como juntar duas palavras ou frases
-* `` console.log("oi, " + "tudo bem" )``
+* ` console.log("oi, " + "tudo bem" )`
 * ```js 
     let word1 = "olá"
     let word2 = " mundo"
@@ -695,16 +695,16 @@ São contextos onde um valor é considerado falso ou verdadeiro em contextos ond
 
 Em ordem de importancia para o JS
 
-1. grouping                  ``( )``
-2. negação e remento         ``!``, ``++``, ``--``
-3. multiplicação e divisão   ``*``, ``/``
-4. adição e subtração        ``+``, ``-``
-5. relacional                ``<``, ``>``, ``<=``, ``=>`` 
-6. igualdade                 ``==``, ``"==``. ``===``, ``!===``       
-7. AND                        ``&&``
-8. OR                         ``||``
-9. condicinal                 ``?``, ``:``  
-10. assignmente               ``=``, ``+=``, ``-=``, ``*=``
+1. grouping                  `( )`
+2. negação e incremento         `!`, `++`, `--`
+3. multiplicação e divisão   `*`, `/`
+4. adição e subtração        `+`, `-`
+5. relacional                `<`, `>`, `<=`, `=>` 
+6. igualdade                 `==`, `"==`. `===`, ``!===``       
+7. AND                        `&&`
+8. OR                         `||`
+9. condicinal                 `?`, `:`  
+10. assignmente               `=`, `+=`, `-=`, `*=`
 
 ## Condicionais e controle de fluxo
 Neste capitulo estou vendo sobre controle do fluxo da aplicação, apuração de erro, como desparar erros caso tenha, como verificar se algo esta funcionando corretamente.
@@ -715,7 +715,7 @@ Toda aplicação tem um fluxo padrão, o controle de fluxo é definir o que vai 
 
 ### If e Else
 
-Em portugues seria se e senão, são estruturas de controle que nos ajudam a fazer o fluxo de controle da nossa aplicação, uma complementa a outra e as vezes o ``if`` pode ser usado sozinho, pois as vezes você apenas quer verificar uma coisa e não precisa de um ``else``,dentro do paranteses vai a condicional que retorna um valor true ou false entrando ou não no boloco de código,  ilustrando nos exemplos abaixo as duas formas, ;
+Em portugues seria se e senão, são estruturas de controle que nos ajudam a fazer o fluxo de controle da nossa aplicação, uma complementa a outra e as vezes o `if` pode ser usado sozinho, pois as vezes você apenas quer verificar uma coisa e não precisa de um `else`,dentro do paranteses vai a condicional que retorna um valor true ou false entrando ou não no boloco de código,  ilustrando nos exemplos abaixo as duas formas, ;
 
 ```js
     let age = 18
@@ -746,7 +746,7 @@ Uma boa pratica que descobri durante o curso é que também podemos colocar as v
 ```
 ### Switch
 
-É semelhante ao if mas esta te da escolhas para fazer dentro da aplicação, nesta estrutura as escolha são dita como casos ou ``case``, é necessario declarala com ``switch(){}`` assim como no ``if``, e o termo ``break`` aqui é usado para sinalizar que aquele caso acabou, senão usado o codigo escorre para ou tras opções dentro do ``switch``, já o ``default`` é utilizado para quando algo que não foi definido é passodo como opção.
+É semelhante ao if mas esta te da escolhas para fazer dentro da aplicação, nesta estrutura as escolha são dita como casos ou `case`, é necessario declarala com `switch(){}` assim como no `if`, e o termo `break` aqui é usado para sinalizar que aquele caso acabou, senão usado o codigo escorre para ou tras opções dentro do `switch`, já o `default` é utilizado para quando algo que não foi definido é passodo como opção.
 ```js
     switch(){
         case 'diaLimpo':
@@ -805,13 +805,13 @@ Se faz necessario colocar o parametro/condicional do switch como valor do case q
 ### Throw e Try/Catch
 É utilizado para capturar erros.
 
-Throw é como se fosse arremessar algo normalmente é usado para mandar mensagens de erro, ou alguma mensagem, para utilizar o ``throw`` corretamente precisamos do ``try/catch`` pois caso usado incorretamente ele para a aplicação caso a mensagem que foi jogada não seja pega.
+Throw é como se fosse arremessar algo normalmente é usado para mandar mensagens de erro, ou alguma mensagem, para utilizar o `throw` corretamente precisamos do `try/catch` pois caso usado incorretamente ele para a aplicação caso a mensagem que foi jogada não seja pega.
             
     O "throw" para a execução do bloco de código onde ele é inserido,
     mas caso não usado o "try/catch" ele para a aplicação inteira,
     então tomar cuidado para não esquecer 
 
-Try/catch é algo como "tente pegar" esta é a parte do codigo que vai tentar pegar o que o ``throw`` jogou para a gente, exemplo a seguir:
+Try/catch é algo como "tente pegar" esta é a parte do codigo que vai tentar pegar o que o `throw` jogou para a gente, exemplo a seguir:
 
 ```js
    function myName(name = ''){
@@ -832,16 +832,16 @@ Caso a função seja executada corretamente ele vai passar o valor correto.
 
 ### For
 
-No ``for`` é possivel executar um bloco de código enquanto as condições forem acatadas, como no código abaixo:
+No `for` é possivel executar um bloco de código enquanto as condições forem acatadas, como no código abaixo:
 
 ```js
     for(let i=0, i<=10, i++){
         console.log(i)
     }
 ```
-No código é instriudo que sexa executado o ``console.log`` enquanto ``i`` for menor ou igual que 10, a delcaração do ``for`` é dada pela declaração de uma variavel index, uma condição para a parada do loop e um incremento.
+No código é instriudo que sexa executado o `console.log` enquanto `i` for menor ou igual que 10, a delcaração do `for` é dada pela declaração de uma variavel index, uma condição para a parada do loop e um incremento.
 
-Tambem podemos usa o ``break`` para parar o loop antes ou usar o ``continue`` para pular um loop estes são feitos dentro de um ``if`` como por exemplo: 
+Tambem podemos usa o `break` para parar o loop antes ou usar o `continue` para pular um loop estes são feitos dentro de um `if` como por exemplo: 
 
 Pula o loop de numero 5
 ```js
@@ -877,7 +877,7 @@ While significa em portugue enquanto, então enquanto a condição dele estive c
         i--
     }
 ```
-No código acima ele continua executando enquanto ``i`` for maior ou igua a 0, e o decremento vai fazer com que ele chegue a menor que 0.
+No código acima ele continua executando enquanto `i` for maior ou igua a 0, e o decremento vai fazer com que ele chegue a menor que 0.
 
 ### For...of 
 
@@ -890,7 +890,7 @@ Esta estrutura vai cria um loop atraves de uma variavel que nos tivermos declara
 
     }
 ```
-no código acima ele vai pegar caracter por caracter da string name e vai imprimir ``no console.log``, no case de ser um array ele pegaria cada elemento do array do primeiro no index até o ultimo e impimiria pelo ``console.log``.
+no código acima ele vai pegar caracter por caracter da string name e vai imprimir `no console.log`, no case de ser um array ele pegaria cada elemento do array do primeiro no index até o ultimo e impimiria pelo `console.log`.
 
 ### For in
 
@@ -946,3 +946,256 @@ Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
 * Contar o numero de autores
 * Mostrar livros do autor Auguto Cury
 * Transformar a função acima em uma função que ira receber o nome do auto e devolver os livros desse autor
+
+## DOM(Document Object Model)
+
+* É o HTML convertido para um Onjeto JS
+* API que representa e interage com o HTML 
+    * API é tudo que nos ajuda a interagir com algo dentro da programação 
+* Estrutura de dados do tipo árvore, criada pelo browser
+*  Propriedades e métodos
+
+### Para que?
+
+* JS usa a DOM para se conectar ao HTML
+* Manipular o HTML com o JS
+* Você só programa para WEB poruqe existe a DOM
+
+### Selecioando elementos
+
+*  `getElementById`
+    - Este método usa o `id` do elemento HTML para seleciona-lo
+    ```js
+        document.getElementById('titulo-principal') 
+    ```
+
+*  `getElementsByClassName`
+    - É bem parecido com o caso de cima mas ele pode seleciona mais de um elemento contanto que o nome da classe seja igual;
+    ```js
+        document.getElementsByClassName('paragrafo') 
+    ```
+    - Usado caso só precise dos elementos sem precisar passar por um loop
+
+*  `getElementsByTagName`
+    - É bem parecido com o caso de cima e ele também pode seleciona mais de um elemento mas ele seleciona diretamente pelo nome da tag HTML;
+    ```js
+        document.getElementByTagName('titulo-principal') 
+    ```
+    - Usado caso só precise dos elementos sem precisar passar por um loop
+
+*  `querySelector`
+    - É o mais versatil dos seletores e ele seleciona por seletor, e funciona como no CSS, mas ele esta versão só pega o primeiro que ele achar na pagina 
+    ```js
+        document.querySelector('.paragrafo') 
+    ```
+    - No casos acima selecionamo uma classe `paragrafo`
+
+*  `querySelectorAll` 
+    - Traz uma lista de nós
+    - É parecido com o caso acima mas ele pode selecionar todos do tipo de seletor que voce colocou dentro do parênteses
+    - Diferença entre nodeList e HTMLcolection
+        * O nodeList pode usar um forEach para passar por dentro da lista e mostra o conteudo da lista, possibilitando buscar um elemento especifico também. 
+    ```js
+        document.querySelectorAll('p') 
+    ```
+    - Usado caso precise fazer um forEach em algum momento do elementos na aplicação 
+
+### Manipulando conteúdos
+
+* `textContent`
+    - Ele pega o elemento e pode tanto mudar o conteudo do elemento selecionado quanto concatenar com mais alguma valor os dois seram mostrados a seguir   
+    ```js
+        const element = document.querySelector('h1')
+        
+         element.textContent = "Olá mundo!"
+    ```
+    Concatena o conteudo do elemento HTML com o valor do `textContent`
+    ```js
+        const element = document.querySelector('h1')
+        
+         element.textContent += "Olá mundo!"
+    ```
+
+* innerText
+    - Acontece a mesma coisa do acima, mas ele muda apenas o texto interior do elemento
+    ```js
+        const element = document.querySelector('h1')
+        
+         element.innerText = "Olá mundo!"
+    ```
+
+* innerHTML
+    - Nos possibilita trocar o conteudo do elemento HTML mas também nos possibilita colocar mais HTML por meio do JS como colocar um paragra ou colocar uma parte do texto em negrito/bold  
+    ```js
+        const element = document.querySelector('h1')
+        
+         element.innerHTML = "Olá <strong>mundo</strong>!"
+    ```
+
+* value
+    - Serve tanto para mostra os valores quanto para alterar os valores dos Inputs
+    ```js
+        const element = document.querySelector('h1')
+        
+         element.textContent = "Olá mundo!"
+    ```
+### Manipulando atributos
+- `setAttribute`
+    * Adicionar um atributo a um elemento HTML
+       ```js
+        const element = document.querySelector('header')
+            //adiciona um id chamado "header"
+         element.setAttribute('id','header') 
+            // Pega o id adicionado acima
+         const headerID = document.querySelector('#header')
+    ```
+- `removeAtributtribute`
+    * remove o atributo de um elemento HTML
+       ```js
+        const element = document.querySelector('header')
+            //adiciona um id chamado "header"
+         element.setAttribute('id','header') 
+            // Pega o id adicionado acima
+         const headerID = document.querySelector('#header')
+            //remove o atributo id adicinado acima
+         header.removeAttribute('id')
+    ```
+
+### Manipulando estilos e classes
+
+É possivel colocar CSS na pagina a partir do JS da seguinte forma:
+```js
+    const element = document.querySelector('h1')
+        
+    element.style.color = "#00AA3F"
+
+```
+O CCS no JS pode ser chamado no estilo camelCase ao inves de como no CSS padrão nos tiramos o `"background-color"` e colocamos `"backgroundColor"`  
+
+#### Alterando classes
+* `classList`
+    - Traz a lista de classes dentro do elemento selecionado
+    ```js
+        const element = document.querySelector('h1')
+        
+         element.classList
+    ```
+* `add()`
+    - Adiciona uma ou mais classes
+    ```js
+        const element = document.querySelector('h1')
+            //adiciona as classes 'active' e 'green' ao elemento selecionado
+         element.classList.add('active', 'green')
+    ```
+* `remove()`
+    - remove uma classe
+    ```js
+        const element = document.querySelector('h1')
+            //remove a classes 'active' do elemento
+         element.classList.remove('active') 
+    ```
+* `toggle()`
+    - Adiciona ou remover uma classes dependendo se ela existe ou não no documento
+    ```js
+        const element = document.querySelector('h1')
+            // se a classe 'active' existe ele a remove se não ele a adiciona.
+         element.classList.toggle('active')
+    ```
+### Navegando pelos elementos
+
+* `parentElement` 
+    - Pega o elemento pai do elemento selecionado
+    ```js
+        const element = document.querySelector('h1')
+            // no caso o pai do 'h1'
+         element.parentElement
+         console.log(element.parentElement)
+    ```
+* `parentNode`
+    - Pega o no pai do elemento selecionado
+    ```js
+        const element = document.querySelector('h1')
+            // no caso o nó pai do 'h1'
+         element.parentNode
+         console.log(element.parentNode)
+    ```
+#### Pegando elementos filhos
+
+* `childNode`
+    - traz um nodeList dos elemento filhos 
+* `children`
+    - traz um HTMLcolection
+* `lastElementChild`
+    - pega o ultimo elemento filho
+* `firstElementChild`
+    - pega o primeiro elemento filho
+
+            Vale lebra que é necessario o "." para chamar esses metodo
+#### Buscando irmãos
+* `nextElementSibling`
+    - pega o proximo irmão ele leva em consideração o espaço vazio do codigo
+* `nextElementSiblingElement`
+    - pega o proximo elemento irmão
+* `previousSiblingElement`
+    - pega o elemento irmão anterior
+* `previousSibling`
+    - pega o  irmão anterior ele leva em consideração o espaço vazio do codigo
+
+### Criando e adicionando elementos na página
+* `createElement`
+    - cria um elemento HTML por meio do JS
+* `append`
+    - Adiciona o elemento criado apos o ultimo filho do elemento selecionado 
+* `prepend`
+    - Adiciona o elemento criado como o primeiro filho do elemento selecionado
+
+```js 
+    //cirando elemento com createElement
+    const div = document.createElement("div")
+    div.innerText = "Olá Mundo"
+
+    // append e prepend
+    const body = document.querySelector("body")
+    // adiciona a div a pagina como ultimo filho do body 
+    //body.append(div)
+
+    //adicina a div a pagina como primeiro filho do body
+    body.prepend(div)
+```
+
+* `insertBefore`
+    - Adiciona antes de um elemento HTML especifico
+    ```js 
+        //criando elemento com createElement
+        const div = document.createElement("div")
+        div.innerText = "Olá Mundo"
+
+        const body = document.querySelector("body")
+        const header = body.querySelector('header')
+        // insere antes do elemento script do HTML
+        body.insertBefore(div, script)
+        //simula um insertAfter já o JS  não tem um naturalmente
+        body.insertBefore(div, header.nextSibling)
+
+    ```
+ 
+### Evento JS
+
+Uma das maneira de adicionar eventos JS no HTML é colocar como atributo no proprio elemento HTML e temos varios destes atributos como: onmouseover, onclick, ondoubleclick e etc. No caso você colocaria o atributo e dentro dele a função que quer executar 
+
+```html
+    <button onclick='send()'>Enviar</button>
+```
+
+Também podemos colocar eventos por teclado e para isso nos usamos o `onkeyup` toda vez que soltamos a tecla dentro do input ele roda a função, `onkeydown` toda vez que precionamos a tecla dentro do input ele roda a função e `onkeypress` executa a função sempre que pressionamos a tecla.
+
+    ```js 
+        
+        const input = document.querySelector("input")
+        // e tambem podemos apenas mudar o onkey press pelo onkeyup
+        // ou pelo onkeydown para usar o evento 
+        input.onkeypress = function(){
+            console.log(rodei)
+        }
+
+    ```
