@@ -1190,16 +1190,47 @@ Uma das maneira de adicionar eventos JS no HTML é colocar como atributo no prop
 #### Adicinando via teclado e JS
 Também podemos colocar eventos por teclado e para isso nos usamos o `onkeyup` toda vez que soltamos a tecla dentro do input ele roda a função, `onkeydown` toda vez que precionamos a tecla dentro do input ele roda a função e `onkeypress` executa a função sempre que pressionamos a tecla.
 
-    ```js 
+```js 
         
-        const input = document.querySelector("input")
-        // e tambem podemos apenas mudar o onkey press pelo onkeyup
-        // ou pelo onkeydown para usar o evento 
-        input.onkeypress = function(){
-            console.log(rodei)
-        }
+    const input = document.querySelector("input")
+    // e tambem podemos apenas mudar o onkey press pelo onkeyup
+    // ou pelo onkeydown para usar o evento 
+    input.onkeypress = function(){
+        console.log(rodei)
+    }
 
-    ```
+```
 #### Adicionando evendo via JS
 
+Quando fazemos os eventos por meio do JS nos usamos o `addEventListener` é uma função que é disparada quando algo acontece ao elemento que ele esta acoplado ele dispara um o codigo 
 
+```js 
+        //seleciona o h1
+    const h1 = document.querySelector("h1")
+
+    //adiciona um monitorador de evento ao elemento h1
+    //no caso esta esperando um click e vai disparar
+    //a função print logo abaixo
+    h1.addEventListener('click', print)
+    function print(){
+        console.log(rodei)
+    }
+```
+#### Argumento event
+
+É o argumento evento que por vezes vai dentro de uma função este argumento pega o evento que esta associado ao elemento e pode nos passar varias infomações do valor que esta sendo inserido em um campo ao tipo de evento que esta sendo disparado. E nois também podemos escolher o tipo de informações que ele nos da com o `"."`.
+
+```js 
+        
+    const input = document.querySelector("input")
+    // o evento é o onkeypress
+    input.onkeypress = function(event){
+        //imprime no console o que o eventa nos passa
+        console.log(event)
+    }
+
+```
+
+### Exercicio modal
+
+Fazer com que exiba um modal quando clicado no botão e fazer com que o modal feche quando clicado na tecla `ESC` 
