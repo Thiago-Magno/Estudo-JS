@@ -4,15 +4,15 @@ Neste repositorio estou registrando meus estudo em js(JavaScript), para futuras 
 
 ## Sobre o JS
 
-* Ele é uma linguagem de programaçãouq roda no navegador do usuário(front-ent)
+* Ele é uma linguagem de programação que roda no navegador do usuário(front-end)
     * Se vc clicar em algum botão da pagina e aparece uma janela, isso é o js;
     * Alteração do site ou aplicação, conforme a interação do usuário tbm é feita por ele.
 * É uma linguagem baixamente tipada e dinâmica
 
 ## O que é possivel fazer?
 
-* É possivel cria aplicações web, mobile(via **React Native**) e desktop(via **Electron**)
-* Empresas famosas que usam
+* É possivel criar aplicações web, mobile(via **React Native**) e desktop(via **Electron**)
+* Empresas famosas que usam:
     * Facebook(Instagram, Whatsapp) 
     * Google
     * Uber
@@ -28,7 +28,7 @@ Neste repositorio estou registrando meus estudo em js(JavaScript), para futuras 
  * Toda linguagem tem a sua;
  * Uma boa comunicação necessita de uma boa sintaxe;
  * A maior parte dos erros para iniciantes em programação esta na sintaxe;
-    * As vezes a falta  de algo ou adição de lgo desnecessario ocasiona em erros no codigo.
+    * As vezes a falta de algo ou adição de algo desnecessario ocasiona em erros no codigo.
 
     ``` js
         console.log('Olá mundo!')
