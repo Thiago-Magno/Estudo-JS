@@ -65,7 +65,7 @@ Nesta parte temos os tipos de dados que exitem no JS.
 * `` template literal ou template de strings
     * permite multiplas linha 
     * expressões de linguagem ``${1 + 1}``, tambem chamado de interpolação;
-        * a interpolação permite a execução de expressões logicas, chamada de variaveis e outras coisa de forma mais simplificada.
+        * a interpolação permite a execução de expressões logicas, chamada de variaveis e outras coisas de forma mais simplificada.
 
 ### Number
 
