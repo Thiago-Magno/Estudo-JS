@@ -193,7 +193,7 @@ Como declaramos uma função?
 ```js
     function <nomeDaFunção>(){
         //codigo da função
-        console.log( 'Olá mundo!')
+        return console.log( 'Olá mundo!')
     }
 ```
 
