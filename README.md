@@ -110,10 +110,10 @@ Tem apenas dois valores
 
         }
     ```
-* estes ajudam a definir este objeto
-    * o que ele é?
-    * o que ele faz?
-    * da onde ele veio? 
+* estes ajudam a definir o objeto
+    * O que ele é?
+    * O que ele faz?
+    * Da onde ele veio? 
     
 ### Array(vetores)
 
@@ -138,17 +138,18 @@ Variaveis são espaços na memoria onde é possivel guardar coisas, como textos,
 * Tambem podemos usar variaveis como atalhos de código
 * Temos 3 palavras reservadas para criar uma variavel
     * `var` // cria uma variavel global que pode ser acessada em varios locais do codigo
-    * `let` // cria uma variavel local destinada a certa parte do cogido
-    * `cont` // cria uma variavel local que não pode ter seu valor alterado após sua definição
+    * `let` // cria uma variavel local destinada a certa parte do codigo
+    * `const` // cria uma variavel local que não pode ter seu valor alterado após sua definição
 
 ### Tipos dinamicos
 
-- Variaveis que não precisam ter um tipo previamente definido
+- Variaveis que não precisam ter um tipo previamente definido em js
 - Podemos mudar o conteudo da variável e essa mudança pode acabar mudando o seu tipo
+   * Por exemplo mudar de uma string para number
 
-## Scopo
+## Escopo
 
-* Escopo determina a visibilidade de alguma variável no JS
+* Escopo para variavel determina a visibilidade dela no JS
 
 ### Block statement
 
@@ -168,7 +169,7 @@ Variaveis são espaços na memoria onde é possivel guardar coisas, como textos,
 *  JS aceita a cadeia de caracteres Unicode, ou seja, aceita `"` e outros caracteres especias 
 
 - Posso
-    * Iniciar com esse caracteres espericais:``$`` ``_``
+    * Iniciar com esse caracteres espericais:`$` `_`
     * Iniciar com letra
     * Colocar acentos
     * Letras maiusculas e minusculas fazem diferença
@@ -180,7 +181,7 @@ Variaveis são espaços na memoria onde é possivel guardar coisas, como textos,
 - Ideal
     * Criar nomes que fazem sentido, que explique o que a variável é ou faz
     * camelCase
-    snaque_case
+    snake_case
     * Escrever o nome das variaveis em inglês
       
 
@@ -204,11 +205,11 @@ Como declaramos uma função?
     ``` js
         listaDeNomes()
     ```
-    * Apos ser chamada a função executa o codigo que vc colocou dentro dela.
+    * Apos ser chamada a função executa o codigo que escrito dentro dela.
 
 ### Argumento e parâmetro
 
-* Parâmetros são valores passado para uma função executada;
+* Parâmetros são valores passados para uma função executada;
     * Dentro dos parenteses se encontram os argumentos
     ```js
        const soma = function(number1, number2){
@@ -220,13 +221,13 @@ Como declaramos uma função?
     ```js
         soma(5, 8)
     ```
-    * Esses valores passados seram enviados para os argumentos e depois usados dentro do ``console.log``
+    * Esses valores passados seram enviados para os argumentos e depois usados dentro do `console.log`
     para fazer o calculo
 
 ### Retornando valores
 
 * Toda função retorna algo; 
-* Toda ve z que um função encontra o ``return`` ela para o que esta fazendo e retona o valor que vem a frente do ``return``;
+* Toda vez que um função encontra o `return` ela para o que esta fazendo e retona o valor que vem a frente do `return`;
     * Exemplo:
     ```js
        const soma = function(number1, number2){
@@ -234,17 +235,18 @@ Como declaramos uma função?
             return total
         }
     ```
-        O tipo de Função acima se chama "function expression" 
+        O tipo de Função acima se chama "function expression"
+ 
 ### Hoisting de funções
 
-As funções tem um hoisting contanto que ela não sejam declarada como funções sem nome que são estas:
+As funções tem um hoisting contanto que ela não sejam declaradas como funções sem nome que são estas:
 ```js
     const imAFunction = function(){
         //códido da função
     }
 ```
 
-Mas caso sejam declaradas normalmente o JS faz o hoisting da função normalmente, Lembrando Hoisting é a elevação do código, como por exemplo eu chamar a função antes mesmo de cria-la, mas o JS ainda assim da um valor a ela:
+Mas caso sejam declaradas normalmente o JS faz o hoisting da função normalmente, lembrando Hoisting é a elevação do código, como por exemplo eu chamar a função antes mesmo de cria-la, mas o JS ainda assim da um valor a ela:
 ```js
 
     myNameIs()
@@ -255,7 +257,7 @@ Mas caso sejam declaradas normalmente o JS faz o hoisting da função normalment
     }
 ```
 
-Assim o JS procura se há uma função com este nome e a puxa para sime em segundo plano figurativamente ficando mais ou menos assim:
+Assim o JS procura se há uma função com este nome e a puxa para cima em segundo plano figurativamente ficando mais ou menos assim:
 ```js
 
      function myNameIs(){
@@ -268,7 +270,7 @@ Assim o JS procura se há uma função com este nome e a puxa para sime em segun
 ```
 ### Arrow function
 
-* O Arrow Function é uma forma simplificada de declara a fução do tipo expression
+* O Arrow Function é uma forma simplificada de declarar a função do tipo expression
 
         Lembrando que as funções expression não tem Hoisting, logo a 
         função tem que ser usada na ordem correta a chamando depois
@@ -288,7 +290,7 @@ Assim o JS procura se há uma função com este nome e a puxa para sime em segun
 
 ### Callback function
 
-* É como se passassemos uma função como arugumento para outra função, este pode ser feito chandando um função de fora pra dentra da sua função e ficaria assim: 
+* É como se passassemos uma função como arugumento para outra função, este pode ser feito chandando uma função de fora para dentro da sua função e ficaria assim: 
 ```js
 
    funtion myNameIs(name)  {
@@ -306,8 +308,8 @@ Assim o JS procura se há uma função com este nome e a puxa para sime em segun
 * Permitindo que o nosso parametro possa ser executado como uma função.  
 
 ### Função construtora
-* O proprio JS ja tem algumas delas pronta dentro de sí.
-* Ela ser como um molde para a criação de varios objetos
+* O proprio JS ja tem algumas delas prontas dentro de sí.
+* Ela serve como um molde para a criação de varios objetos
 * Assim que criada a adiciona um nova palavra-chave ao js o ``this``
 * exemplo de criação;
     ```js
@@ -315,16 +317,16 @@ Assim o JS procura se há uma função com este nome e a puxa para sime em segun
    function Person(name)  {
         //códido da função
         this.name = name
-        this.wal = function(){
+        this.walk = function(){
             return "andando"
         }
     }
 
     const thiago = new Person("Thiago")
 
-* O que esse codigo faria é que dentro da função Person no criamos um molde das propriedades que serão atribuidas a o objeto quando criado.
-*  A criação do objeto é feita pelo termo ``new`` que diz que um novo objeto
-* Por boas praticas esse tipo de função tem o primeiro caracter em  maiuscula, ex: ``Date``, ``Person``, ``String`` 
+* O que esse codigo faria é que dentro da função Person no criamos um molde das propriedades que serão atribuidas ao objeto quando criado.
+*  A criação do objeto é feita pelo termo ``new`` que diz que um novo objeto foi criado
+* Por boas praticas esse tipo de função tem o primeiro caracter em letra maiuscula, ex: ``Date``, ``Person``, ``String`` 
 
 ## Manupulando dados com JS
 
