@@ -21,7 +21,7 @@ Neste repositorio estou registrando meus estudo em js(JavaScript), para futuras 
     * ...
 
 * 99.99% dos sites na web usam JS
-* Linguagem obrigatoria pra quem programa no Front-ent
+* Linguagem obrigatoria pra quem programação no Front-ent
  
  ## A importancia da sintaxe no JS
 
