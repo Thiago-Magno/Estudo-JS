@@ -537,7 +537,7 @@ O ``typeOf`` me tras o tipo de dado
     let number = "43"
     console.log(typeOf number)
 ```
-Já no caso do ``delete`` ele pode ser usado para deletar algo, como um atributo de onjeto ou um objeto em si.
+Já no caso do ``delete`` ele pode ser usado para deletar algo, como um atributo de objeto ou um objeto em si.
 
 
 ```js
@@ -551,26 +551,26 @@ delete person.age
 
 ```
 
-Como visto no exemplo acima que nós utilizamo o delete para deletar o atributo ``age``
+Como visto no exemplo acima foi utilizado o delete para deletar o atributo `age` do objeto
 
 ### Operadores aritiméticos
 
 * Multiplicação, o operador responsavel é o `*`
     *  `console.log(2.3 * 2)`
 
-* Divisão o operador responsavel é o `/`
+* Divisão, o operador responsavel é o `/`
     * `console.log(2/ 2)`
 
-* Soma o operador responsavel é o `+`
+* Soma, o operador responsavel é o `+`
     * `console.log(3 + 2)`
 
-* Subtração o operador responsavel é o `-`
+* Subtração, o operador responsavel é o `-`
     * `console.log(5 - 2)`
 
-* Resto da divisão o operador responsavel é o `%`
+* Resto da divisão, o operador responsavel é o `%`
     * `console.log(11 % 11)`
 
-* Incremeto o operador responsavel é o `++`
+* Incremeto adiciona um a variavel, ao operador responsavel é o `++`
     * No caso do incremento e do decremento é possivel colocar o operador antes do valor para fazer com que o a operação ocorra antes como no exemplo abaixo  
     * ````js
         let number = 1
@@ -580,24 +580,24 @@ Como visto no exemplo acima que nós utilizamo o delete para deletar o atributo 
     ```
  
 
-* Deremento o operador responsavel é o `--`
+* Decremento o operador responsavel é o `--`
     * ```js
         let number = 1
-        number++
-        console.log(number++) // incremento comum
-        console.log(++number) // Incremento antes da operação
+        number--
+        console.log(number--) // decremento comum
+        console.log(--number) // decremento antes da operação
     ```
 
-* Exponencial o operador responsavel é o `*`
+* Exponencial o operador responsavel é o `**`
     * `console.log(2 ** 2)` seria o equivalente a 2²
 
 ### Grouping operator
 
-Que assim como funciona na matermatica são os `()` eles possibilitão mudar a ordem de calculos matematico e tambem para o agrupamento de palavra no JS.
+Que assim como funciona na matermatica são os `()` possibilitão mudar a ordem de calculos matematicos e tambem para o agrupamento de palavra no JS.
 
 ### Operadores de comparação
 
-Estes tipos de operadores comparão dois valores e retornão um boolean dizendo se a comparação é true ou false.
+Estes tipos de operadores comparam dois valores e retornam um boolean dizendo se a comparação é true ou false.
 
 - `==` este faz a comparação e diz se um parametro é igual ao outro
     - ```js
@@ -622,26 +622,26 @@ Estes tipos de operadores comparão dois valores e retornão um boolean dizendo 
 No geral são bem parecido mas eles testão se tanto o valor é igual, como também se o tipo de dado também é igual e são eles:
 - `===` este testa se o calor é igual no dois primeiros sinais de igualdade e no terceiro ele testa se o tipo do dado é igual a o do parametro também.
     - `console.log(three !== 1)`
-        `console.log(one !== 1)`
+        `console.log(one === 1)`
         `console.log(one !== '1')`
 
-- `!==` este testa se o calor é diferente no dois primeiros sinais de igualdade e no terceiro ele testa se o tipo do dado difere do parametro.
+- `!==` este testa se o calor é diferente nos dois primeiros sinais de igualdade e no terceiro ele testa se o tipo do dado difere do parametro.
 
 ### Operadores de comparação menor que e maior que(igual)
 
 Este são identicos a forma matematica sendo eles:
 
-* `<` menor que, utilizado quando, queremos quando um valor é menor que o outro;
-* `>` maior que, utilizado quando, queremos quando um valor é maior que o outro;
-* `<=` menor igual que, utilizado quando, queremos quando um valor é menor ou igual ao outro;
-* `>=` maior igual que, utilizado quando, queremos quando um valor é maior ou igual ao outro;
+* `<` menor que, utilizado quando queremos quando um valor é menor que o outro;
+* `>` maior que, utilizado quando queremos quando um valor é maior que o outro;
+* `<=` menor igual que, utilizado quando queremos quando um valor é menor ou igual ao outro;
+* `>=` maior igual que, utilizado quando queremos quando um valor é maior ou igual ao outro;
 
 ### Operadores Lógicos
 
 São dois valores do tipo booleano, que quando verificados retornão verdadeiro ou falso, são eles:
 
 - AND  // `&&` Este precisa que os dois sejão verdadeitros para que o argumento seja verdadeiro
-- OR   // `||` Este precisa que pelo menos um dos dois sejão verdadeitros para que o argumento seja verdadeiro
+- OR   // `||` Este precisa que pelo menos um dos dois seja verdadeitros para que o argumento seja verdadeiro
 - NOT  // `!` Este é a negação então tudo que for verdadeiro ele o torna falso, e oque for falso ele torna verdadeiro
 
 ### Operador condicional ternário
@@ -656,11 +656,11 @@ Condição então valor 1 se não valor 2
     const canDrive = age >=18 ? "pode dirigir" : "Não pode dirigir"
     console.log(canDrive)
 ```
-No exemplo acima temos o codigo verificando se uma pessoa tema a idade correta para dirigir, se a idade dela for maior ou igual a 18 ela pode dirigir se não ela não pode dirigir. 
+No exemplo acima temos o codigo verificando se uma pessoa tem a a idade correta para dirigir, se a idade dela for maior ou igual a 18 ela pode dirigir se não ela não pode dirigir. 
 
 ### Operador de String
 
-É a concatenação de duas string, em outras palavras seria como juntar duas palavras ou frases
+É a concatenação de duas strings, em outras palavras seria como juntar duas palavras ou frases
 * ` console.log("oi, " + "tudo bem" )`
 * ```js 
     let word1 = "olá"
@@ -668,7 +668,7 @@ No exemplo acima temos o codigo verificando se uma pessoa tema a idade correta p
     console.log(word + word2 + "é um belo dia"  )
 
     ```
-Acima temos dois tipode de concatenação um que apesnas junta Strings e ou que que junta variaveis e strings, vale comentar que tbm é possivel concatenar outros valores como numeros interios e racionais.
+Acima temos dois tipos de concatenação um que apenas junta Strings e outra que que junta variaveis e strings, vale comentar que tbm é possivel concatenar outros valores como numeros interios e racionais.
 
 ### Falsy / Truthy
 
@@ -704,7 +704,7 @@ Em ordem de importancia para o JS
 7. AND                        `&&`
 8. OR                         `||`
 9. condicinal                 `?`, `:`  
-10. assignmente               `=`, `+=`, `-=`, `*=`
+10. declaração               `=`, `+=`, `-=`, `*=`
 
 ## Condicionais e controle de fluxo
 Neste capitulo estou vendo sobre controle do fluxo da aplicação, apuração de erro, como desparar erros caso tenha, como verificar se algo esta funcionando corretamente.
@@ -715,7 +715,7 @@ Toda aplicação tem um fluxo padrão, o controle de fluxo é definir o que vai 
 
 ### If e Else
 
-Em portugues seria se e senão, são estruturas de controle que nos ajudam a fazer o fluxo de controle da nossa aplicação, uma complementa a outra e as vezes o `if` pode ser usado sozinho, pois as vezes você apenas quer verificar uma coisa e não precisa de um `else`,dentro do paranteses vai a condicional que retorna um valor true ou false entrando ou não no boloco de código,  ilustrando nos exemplos abaixo as duas formas, ;
+Em portugues seria se e senão, são estruturas de controle que nos ajudam a fazer o fluxo de controle da nossa aplicação, uma complementa a outra e as vezes o `if` pode ser usado sozinho, pois as vezes você apenas quer verificar uma coisa e não precisa de um `else`,dentro do paranteses vai a condicional que retorna um valor true ou false entrando ou não no bloco de código, ilustrando nos exemplos abaixo as duas formas;
 
 ```js
     let age = 18
@@ -731,22 +731,20 @@ Em portugues seria se e senão, são estruturas de controle que nos ajudam a faz
     let age = 18
     if(age >= 18){
         console.log("tem mais de 18 anos de idade")
-    } else{
     } 
 ```
 Uma boa pratica que descobri durante o curso é que também podemos colocar as variarveis como condicionais , e assim ficaria, ficando mais ou menos assim:
 
 ```js
     let age = 18
-    let appropriateAge = age >= 18
+    const appropriateAge = age >= 18
     if(apropriateAge){
         console.log("tem mais de 18 anos de idade")
-    } else{
     } 
 ```
 ### Switch
 
-É semelhante ao if mas esta te da escolhas para fazer dentro da aplicação, nesta estrutura as escolha são dita como casos ou `case`, é necessario declarala com `switch(){}` assim como no `if`, e o termo `break` aqui é usado para sinalizar que aquele caso acabou, senão usado o codigo escorre para ou tras opções dentro do `switch`, já o `default` é utilizado para quando algo que não foi definido é passodo como opção.
+É semelhante ao if mas esta te da escolhas para fazer dentro da aplicação, nesta estrutura as escolha são ditas como casos ou `case` é necessario declarala com `switch(){}` assim como no `if`, e no termo `break` aqui é usado para sinalizar que aquele caso acabou, senão usado o codigo escorre para ou tras opções dentro do `switch`, já o `default` é utilizado para quando algo que não foi definido é passado como opção.
 ```js
     switch(){
         case 'diaLimpo':
@@ -756,7 +754,7 @@ Uma boa pratica que descobri durante o curso é que também podemos colocar as v
             console.log("Hoje esta frio")
             break;
         case 'Chovendo':
-            console.log("Hoje  esta chovendo")
+            console.log("Hoje esta chovendo")
             break;
         case 'Quente':
             console.log("Hoje o dia esta muito quente")
@@ -839,7 +837,7 @@ No `for` é possivel executar um bloco de código enquanto as condições forem 
         console.log(i)
     }
 ```
-No código é instriudo que sexa executado o `console.log` enquanto `i` for menor ou igual que 10, a delcaração do `for` é dada pela declaração de uma variavel index, uma condição para a parada do loop e um incremento.
+No código é instriudo que seja executado o `console.log` enquanto `i` for menor ou igual que 10, a delcaração do `for` é dada pela declaração de uma variavel index, uma condição para a parada do loop e um incremento ou decremento.
 
 Tambem podemos usa o `break` para parar o loop antes ou usar o `continue` para pular um loop estes são feitos dentro de um `if` como por exemplo: 
 
@@ -890,11 +888,11 @@ Esta estrutura vai cria um loop atraves de uma variavel que nos tivermos declara
 
     }
 ```
-no código acima ele vai pegar caracter por caracter da string name e vai imprimir `no console.log`, no case de ser um array ele pegaria cada elemento do array do primeiro no index até o ultimo e impimiria pelo `console.log`.
+no código acima ele vai pegar caracter por caracter da string name e vai imprimir no `console.log`, no caso de ser um array ele pegaria cada elemento do array do primeiro no index até o ultimo e impimiria pelo `console.log`.
 
 ### For in
 
-Este cria um loop emcima de um objeto:
+Este cria um loop em cima de um objeto:
 
 ```js
 
@@ -925,11 +923,11 @@ Crie um algoritmo que tranforme as notas do sistema númerico para sistema de no
 
 #### Fluxo de caixa familiar
 
-* Crie um objeto que possuirá 2 propriedade, ambas do tipo array
+* Crie um objeto que possuirá 2 propriedades, ambas do tipo array
     * receitas:[]
     * despesas:[]
 
-Agora, crie uma função que irá calcular o total de receista e dispesas e ié mostra uma mensagem se a Familia esta com o saldo posistivo ou negativo, seguido do valor do saldo.
+Agora, crie uma função que irá calcular o total de receitas e dispesas e ira mostra uma mensagem se a Familia esta com o saldo posistivo ou negativo, seguido do valor do saldo.
 
 #### Celsius para Fahrenheit
 
@@ -949,7 +947,7 @@ Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
 
 ## DOM(Document Object Model)
 
-* É o HTML convertido para um Onjeto JS
+* É o HTML convertido para um Objeto JS
 * API que representa e interage com o HTML 
     * API é tudo que nos ajuda a interagir com algo dentro da programação 
 * Estrutura de dados do tipo árvore, criada pelo browser
@@ -959,7 +957,7 @@ Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
 
 * JS usa a DOM para se conectar ao HTML
 * Manipular o HTML com o JS
-* Você só programa para WEB poruqe existe a DOM
+* Você só programa para WEB porque existe a DOM
 
 ### Selecioando elementos
 
