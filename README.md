@@ -339,12 +339,12 @@ Para acessar esta funcionalidade basta colocar um ``.`` na frente do seu objeto,
 ### Type Conversion/Coersion
 
 * Altera um tipo de dado para outro;
-    * O typeconversion somo nós que fazermos essa converção do dado;
+    * O typeconversion somos nós que fazermos essa converção do dado;
     * O typecoersion é o proprio JS que faz isso automaticamente.
 
-### Manipulação de Stings e numeros
+### Manipulação de Strings e numeros
 
-* Temos funções que podem fazer este pido de converção para nos no JS sento elas:
+* Temos funções que podem fazer este tipo de converção para nos no JS sendo elas:
     * Para conversão de String pra Numero
     ```js
 
@@ -352,9 +352,9 @@ Para acessar esta funcionalidade basta colocar um ``.`` na frente do seu objeto,
         Number(string)
     
     ```
-    * Lembra que capitulo sobre  funções contruturas vimos que o JS tem algumas já prontas? ``Number()`` é uma delas
+    * Lembra que no capitulo sobre funções contruturas vimos que o JS tem algumas já prontas? `Number()` é uma delas
 
-    * Para convesão de Numero para String
+    * Para conversão de Numero para String
     ```js
 
         let number = 123
@@ -362,7 +362,7 @@ Para acessar esta funcionalidade basta colocar um ``.`` na frente do seu objeto,
     ```
 ### Contando caracteres
 
-* Como o titulo indica neste sera mostrado como contar a quantidade de caracteres em uma palavra ou quantos digitos temos em um numero.
+* Como o titulo indica nesta parte sera mostrado como contar a quantidade de caracteres em uma palavra ou quantos digitos temos em um numero.
     * É bem simples de fazer isto com JavaScript, como mostrado as seguir:
     ```js
 
@@ -372,32 +372,32 @@ Para acessar esta funcionalidade basta colocar um ``.`` na frente do seu objeto,
         String(number).length
             
     ```
-    * No exemplo é mostrada a declaração de uma variavel e segui a utilização do metodo ``.length`` para contar a quantidade de caracteres em uma palavra.
+    * No exemplo é mostrada a declaração de uma variavel e em seguida a utilização do metodo ``.length`` para contar a quantidade de caracteres em uma palavra.
 
             Lembrando que para mostrar a quantidade de caracteres 
-            é necessario usar o ``console.log()``, ficando
-            ``console.log(word.length)``. 
+            é necessario usar o ``console.log()`` ou outras formas
+            para mostrar ao usuario, ficando ``console.log(word.length)``. 
 
-    * Já no caso de ver a quantidade temos que converter o numero em uma String para podermos contar quantos tem já que o metodo ``.length`` funciona a penas em Strings.
+    * Já no caso de ver a quantidade de digitos temos que converter o numero em uma String para podermos contar quantos tem já que o metodo ``.length`` funciona a penas em Strings.
 
 ### Casa decimais
 
-* A qui vamos ver como trocar os pontos do numero float por ``","`` e como setar a quanidade de casas de cimais depois da virgula.
+* Aqui vamos ver como trocar os pontos do numero float por ``","`` e como setar a quantidade de casas decimais depois da virgula.
     ```js
 
         let  number = 234.5567
         console.log(number.toFixed(2).replace(".",","))
         
     ```
-    * No código acima a declaração de uma variavel de tipo float com o numero "234.5567", após a declaração do numero no o chamamos e colocamos a função ``toFixed()`` depois para fixar a quantidade de casas decimais 
-        * Para fixar basta colocar a quantidade de casa dentro do parenteses da função  desta forma``toFixed(3)`` 
-    * A substituição do ponto vem logo em seguida coma  função ``replace()``;
-        * Nela colocamos o termo que sera substituito e qual o substituira ficando assim ``.replace(".","",)``
-    * Vale lembra que os numeros float no JS são caracterizado pelo ``"."`` na casa decimal, então ao substituirmos este por uma ``","`` o tranfomamos em uma String.
+    * No código acima a declaração de uma variavel de tipo float com o numero "234.5567", após a declaração do numero nos o chamamos e colocamos a função ``toFixed()`` depois para fixar a quantidade de casas decimais 
+        * Para fixar basta colocar a quantidade de casa dentro dos parenteses da função desta forma `toFixed(3)` 
+    * A substituição do ponto vem logo em seguida com a função `replace()`;
+        * Nela colocamos o termo que sera substituito e qual o substituira ficando assim `.replace("substituido","substituto")`
+    * Vale lembra que os numeros float no JS são caracterizado pelo `"."` na casa decimal, então ao substituirmos este por uma `","` o transformamos em uma String.
 
-### Tranformação de maiuscula em minuscula
+### Transformação de maiuscula em minuscula
 
-Para fazer essa tranformação é bem simple:
+Para fazer essa tranformação é bem simple basta usar os metodos `.toLoweCase()` para minuscula e `.toUpperCase()` para maiuscula:
 * tranformação em minuscula:
 
     ```js
