@@ -959,7 +959,7 @@ Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
 * Manipular o HTML com o JS
 * Você só programa para WEB porque existe a DOM
 
-### Selecioando elementos
+### Selecionando elementos
 
 *  `getElementById`
     - Este método usa o `id` do elemento HTML para seleciona-lo
@@ -968,14 +968,14 @@ Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
     ```
 
 *  `getElementsByClassName`
-    - É bem parecido com o caso de cima mas ele pode seleciona mais de um elemento contanto que o nome da classe seja igual;
+    - É bem parecido com o caso de cima mas ele pode selecionar mais de um elemento contanto que o nome da classe seja igual;
     ```js
         document.getElementsByClassName('paragrafo') 
     ```
     - Usado caso só precise dos elementos sem precisar passar por um loop
 
 *  `getElementsByTagName`
-    - É bem parecido com o caso de cima e ele também pode seleciona mais de um elemento mas ele seleciona diretamente pelo nome da tag HTML;
+    - É bem parecido com o caso de cima e ele também pode selecionar mais de um elemento mas ele seleciona diretamente pelo nome da tag HTML;
     ```js
         document.getElementByTagName('titulo-principal') 
     ```
@@ -986,7 +986,7 @@ Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
     ```js
         document.querySelector('.paragrafo') 
     ```
-    - No casos acima selecionamo uma classe `paragrafo`
+    - No casos acima selecionamos uma classe `paragrafo`
 
 *  `querySelectorAll` 
     - Traz uma lista de nós
@@ -1001,7 +1001,7 @@ Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
 ### Manipulando conteúdos
 
 * `textContent`
-    - Ele pega o elemento e pode tanto mudar o conteudo do elemento selecionado quanto concatenar com mais alguma valor os dois seram mostrados a seguir   
+    - Ele pega o elemento e pode tanto mudar o conteudo do elemento selecionado quanto concatenar com mais algum valor os dois seram mostrados a seguir   
     ```js
         const element = document.querySelector('h1')
         
@@ -1023,7 +1023,7 @@ Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
     ```
 
 * innerHTML
-    - Nos possibilita trocar o conteudo do elemento HTML mas também nos possibilita colocar mais HTML por meio do JS como colocar um paragra ou colocar uma parte do texto em negrito/bold  
+    - Nos possibilita trocar o conteudo do elemento HTML mas também nos possibilita colocar mais HTML por meio do JS como colocar um paragrafo ou colocar uma parte do texto em negrito/bold  
     ```js
         const element = document.querySelector('h1')
         
@@ -1035,7 +1035,7 @@ Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
     ```js
         const element = document.querySelector('h1')
         
-         element.textContent = "Olá mundo!"
+         element.value = "Olá mundo!"
     ```
 ### Manipulando atributos
 - `setAttribute`
@@ -1093,7 +1093,7 @@ O CCS no JS pode ser chamado no estilo camelCase ao inves de como no CSS padrão
          element.classList.remove('active') 
     ```
 * `toggle()`
-    - Adiciona ou remover uma classes dependendo se ela existe ou não no documento
+    - Adiciona ou remove uma classe dependendo se ela existe ou não no documento
     ```js
         const element = document.querySelector('h1')
             // se a classe 'active' existe ele a remove se não ele a adiciona.
@@ -1110,7 +1110,7 @@ O CCS no JS pode ser chamado no estilo camelCase ao inves de como no CSS padrão
          console.log(element.parentElement)
     ```
 * `parentNode`
-    - Pega o no pai do elemento selecionado
+    - Pega o pai do elemento selecionado
     ```js
         const element = document.querySelector('h1')
             // no caso o nó pai do 'h1'
@@ -1128,7 +1128,8 @@ O CCS no JS pode ser chamado no estilo camelCase ao inves de como no CSS padrão
 * `firstElementChild`
     - pega o primeiro elemento filho
 
-            Vale lebra que é necessario o "." para chamar esses metodo
+            Vale lembrar que é necessario o "." para chamar esses metodo
+      
 #### Buscando irmãos
 * `nextElementSibling`
     - pega o proximo irmão ele leva em consideração o espaço vazio do codigo
@@ -1137,7 +1138,7 @@ O CCS no JS pode ser chamado no estilo camelCase ao inves de como no CSS padrão
 * `previousSiblingElement`
     - pega o elemento irmão anterior
 * `previousSibling`
-    - pega o  irmão anterior ele leva em consideração o espaço vazio do codigo
+    - pega o irmão anterior ele leva em consideração o espaço vazio do codigo
 
 ### Criando e adicionando elementos na página
 * `createElement`
@@ -1148,7 +1149,7 @@ O CCS no JS pode ser chamado no estilo camelCase ao inves de como no CSS padrão
     - Adiciona o elemento criado como o primeiro filho do elemento selecionado
 
 ```js 
-    //cirando elemento com createElement
+    //criando elemento com createElement
     const div = document.createElement("div")
     div.innerText = "Olá Mundo"
 
@@ -1172,21 +1173,21 @@ O CCS no JS pode ser chamado no estilo camelCase ao inves de como no CSS padrão
         const header = body.querySelector('header')
         // insere antes do elemento script do HTML
         body.insertBefore(div, script)
-        //simula um insertAfter já o JS  não tem um naturalmente
+        //simula um insertAfter já o JS não tem um naturalmente
         body.insertBefore(div, header.nextSibling)
 
     ```
  
-### Evento JS
+### Eventos JS
 
 #### Adiconando eventos via HTML
-Uma das maneira de adicionar eventos JS no HTML é colocar como atributo no proprio elemento HTML e temos varios destes atributos como: onmouseover, onclick, ondoubleclick e etc. No caso você colocaria o atributo e dentro dele a função que quer executar 
+Uma das maneira de adicionar eventos JS no HTML é colocar como atributo no proprio elemento HTML e temos varios destes atributos como: onmouseover, onclick, ondoubleclick e etc. No caso você colocaria o atributo e dentro dele a função que quer executar. 
 
 ```html
     <button onclick='send()'>Enviar</button>
 ```
 #### Adicinando via teclado e JS
-Também podemos colocar eventos por teclado e para isso nos usamos o `onkeyup` toda vez que soltamos a tecla dentro do input ele roda a função, `onkeydown` toda vez que precionamos a tecla dentro do input ele roda a função e `onkeypress` executa a função sempre que pressionamos a tecla.
+Também podemos colocar eventos por teclado e para isso nos usamos o `onkeyup` toda vez que soltamos a tecla dentro do input ele roda a função, `onkeydown` toda vez que pressionamos a tecla dentro do input ele roda a função e `onkeypress` executa a função sempre que pressionamos a tecla.
 
 ```js 
         
@@ -1198,9 +1199,9 @@ Também podemos colocar eventos por teclado e para isso nos usamos o `onkeyup` t
     }
 
 ```
-#### Adicionando evendo via JS
+#### Adicionando evento via JS
 
-Quando fazemos os eventos por meio do JS nos usamos o `addEventListener` é uma função que é disparada quando algo acontece ao elemento que ele esta acoplado ele dispara um o codigo 
+Quando fazemos os eventos por meio do JS nos usamos o `addEventListener` é uma função que é disparada quando algo acontece ao elemento que ele esta acoplado ele dispara um codigo 
 
 ```js 
         //seleciona o h1
@@ -1216,7 +1217,7 @@ Quando fazemos os eventos por meio do JS nos usamos o `addEventListener` é uma 
 ```
 #### Argumento event
 
-É o argumento evento que por vezes vai dentro de uma função este argumento pega o evento que esta associado ao elemento e pode nos passar varias infomações do valor que esta sendo inserido em um campo ao tipo de evento que esta sendo disparado. E nois também podemos escolher o tipo de informações que ele nos da com o `"."`.
+É o argumento evento que por sua vez vai dentro de uma função, este argumento pega o evento que esta associado ao elemento e pode nos passar varias infomações, do valor que esta sendo inserido em um campo, ao tipo de evento que esta sendo disparado. E nos também podemos escolher o tipo de informações que ele nos da com o `"."`.
 
 ```js 
         
@@ -1231,4 +1232,4 @@ Quando fazemos os eventos por meio do JS nos usamos o `addEventListener` é uma 
 
 ### Exercicio modal
 
-Fazer com que exiba um modal quando clicado no botão e fazer com que o modal feche quando clicado na tecla `ESC` 
+Fazer com que exiba um modal quando clicado no botão e fazer com que o modal feche quando pressionando na tecla `ESC` 
