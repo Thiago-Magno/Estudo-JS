@@ -171,7 +171,7 @@ Variaveis são espaços na memoria onde é possivel guardar coisas, como textos,
     * Iniciar com esse caracteres espericais:``$`` ``_``
     * Iniciar com letra
     * Colocar acentos
-    * Letras maisuscula e munisculaz fazem diferença
+    * Letras maiusculas e minusculas fazem diferença
 
 - Não posso
     * Iniciar com numeros 
@@ -181,8 +181,8 @@ Variaveis são espaços na memoria onde é possivel guardar coisas, como textos,
     * Criar nomes que fazem sentido, que explique o que a variável é ou faz
     * camelCase
     snaque_case
-    Escrever o nome das variaveis em inglês
-    * 
+    * Escrever o nome das variaveis em inglês
+      
 
 ## Functions / Funções
 
