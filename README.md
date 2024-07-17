@@ -416,7 +416,7 @@ Para fazer essa tranformação é bem simple basta usar os metodos `.toLoweCase(
     ```
 ### Separando String
 
-* Aqui Vamos ver como separar um texto com espaços em um array onde cada texto é uma posição do array. E depois vamos tranfomar o array em um texto e onde eram  espaços vamos colocar ``"_"``
+* Aqui vamos ver como separar um texto com espaços em um array onde cada texto é uma posição do array. E depois vamos transfomar o array em um texto e onde eram espaços vamos colocar ``"_"``
 
     ```js
         let phrase = "Eu quero viver o Amor!"
@@ -427,8 +427,8 @@ Para fazer essa tranformação é bem simple basta usar os metodos `.toLoweCase(
         Como já esta bem avaçado no arquivo vou começa a pular na 
         explicação que declaramos variaveis, já que apareceu bastante durante este.
 
-    * No código acima temos o ``phrase.split(" ")`` este ``.split`` é quem faz a separação de cada palavra em uma posição do array de acordo com o parametro passado para ele qua no caso foi o espaço vazio.
-    * logo após temos o ``myArray.join`` a parte importante aq é o ``.join()`` já que é ele que faz a junção da frase novamente só que dessa vez utilizado o que demos a ele de parametro no codigo acima demos a ele ``.join("_")``
+    * No código acima temos o `phrase.split(" ")` este `.split` é quem faz a separação de cada palavra em uma posição do array de acordo com o parametro passado para ele, no caso foi o espaço vazio.
+    * Logo após temos o `myArray.join` a parte importante aqui é o `.join()` já que é ele que faz a junção da frase novamente só que dessa vez utilizado o que demos a ele de parametro no codigo acima demos a ele `.join("_")`
 
     Como um bonus algo muito util para verificar quantas palavra tem em uma frase assim como o tamanho de um array.
 
@@ -437,25 +437,23 @@ Para fazer essa tranformação é bem simple basta usar os metodos `.toLoweCase(
         let myArray = phrase.split(" ")
         console.log(myArray.length)
         
-        let phraseWithUnderscore = myArray.join("_")
-        console.log(phraseWithUnderscore)
     ```
-    No código acima para verificar o tamanho do array e descobrir quantas palavras apensa adicionamos o metodo ``.length`` após a sepração dele por espaços vazios.
+    No código acima para verificar o tamanho do array e descobrir quantas palavras apenas adicionamos o metodo ``.length`` após a sepração dele por espaços vazios.
 
 ### Encontrando palavras
     
-* É bem simples de se encontra palavras em uma frase usando JS basta incluir a função ``.includes()`` depois da variavel que contem a frase, e colocar que palavra vc esta procurando como parametro, a seguir um exemplo:
+* É bem simples de se encontra palavras em uma frase usando JS basta incluir a função ``.includes()`` depois da variavel que contem a frase, e colocar a palavra que vc esta procurando como parametro, a seguir um exemplo:
 ```js
         let phrase = "Eu quero viver o Amor!"
         console.log(phrase.includes("Amor"))
 ```
-    O ``includes()`` é uma função/metodo caseSensistive, em outras
+    O `includes()` é uma função/metodo caseSensistive, em outras
     palavra as letras maiuscula e minuscula do parametro tem que ser 
     iguais para ele encontrar a palavra.
 
-### Criando arrays com contrutor
+### Criando arrays com construtor
 
-Funciona parece bem parecido com como criamos funções contrutoras usamos o new para cria-lo e depois passamos o que tem dentro dele como parametros
+Funciona bem parecido com como criamos funções contrutoras usamos o `new` para cria-lo e depois passamos o que tem dentro dele como parametros
 
 ```js
     let array = new Array('a','b','c')
@@ -479,7 +477,7 @@ Se dentro de um array tiver uma função nós podemos executar essa função sel
         Console.log(array[2]())
 ```
 ### String para Array
-* O proprio ``Array`` já é um objeto disponivel para nó dentro do JS então podemos chamar metodos apartir dele no caso o ``from()`` espera strings como parametro então assim que colocamos a nossa varialvel string dentro dele ele a tranforma em array separando cada caracter em uma posição.
+* O proprio `Array` já é um objeto disponivel para nós dentro do JS então podemos chamar metodos apartir dele, no caso o `from()` espera strings como parametro então assim que colocamos a nossa variável string dentro dele, ele a transforma em array separando cada caracter em uma posição.
     ```js
         let word = "virada"
         console.log(Array.from(word))
@@ -489,28 +487,28 @@ Se dentro de um array tiver uma função nós podemos executar essa função sel
 Nesta parte veremos como:
 
     Para simplificar um pouco pense como se o array já estivesse
-    declarado com no de array e nós só estamo adicioando ou tirando coisas de dentro
+    declarado e nós só estamos adicioando ou tirando coisas de dentro dele
 
-* Adiciona um item no fim(toda vez que usamos ele adiciona algo no final);
-    * seleciona o array e depois coloca o metodo ``push()``;
-        * ``array.push('estar') ``.
-* Adiciona im item no começo;
-    * seleciona o array e depois coloca o metodo ``unshift()``;
-        * ``array.unshift("oi")``.
-* Remover do fim(toda vez que usamos ele remove algo do final);
-    *  seleciona o array e depois coloca o metodo ``pop()``;
-        * ``array.pop()``.
-* Remover do começo;
-    *   seleciona o array e depois coloca o metodo ``shift()``;
-        * ``array.shift()`` .
+* Adiciona um item no fimdo array(toda vez que usamos ele adiciona algo no final);
+    * seleciona o array e depois coloca o metodo `.push()`;
+        * `array.push('estar') `.
+* Adiciona um item no começo do array;
+    * seleciona o array e depois coloca o metodo `.unshift()`;
+        * `array.unshift("oi")`.
+* Remover do fim do array(toda vez que usamos ele remove algo do final);
+    *  seleciona o array e depois coloca o metodo `.pop()`;
+        * `array.pop()`.
+* Remover do começo do array;
+    *   seleciona o array e depois coloca o metodo `.shift()`;
+        * `array.shift()` .
 * Pegar somento alguns elemento do array;
-    *  seleciona o array e depois coloca o metodo ``slice()`` dentro do metodo no passa como parametro da onde que remos que ele comece a pegar e onde ele pare;
-        * ``array.slice(1,2)``.
+    *  seleciona o array e depois coloca o metodo `.slice()` dentro do metodo podemos passar como parametro da onde queremos que ele comece a pegar e onde queremos que ele pare;
+        * `array.slice(1,2)`.
 * remover 1 ou mais de qualquer posição
-    *  seleciona o array e depois coloca o metodo ``splice()``, este é parecido com o anterior no colocamo como parametro a posição de onde ele começa a tira e quantos itens ele pode remover;
-        * ``array.splice(1,2)`` no caso remover dois itens começando da posição 1.
+    *  seleciona o array e depois coloca o metodo `splice()`, este é parecido com o anterior nos colocamos como parametro a posição de onde ele começa a tirar e quantos itens ele pode remover;
+        * `array.splice(1,2)` no caso remover dois itens começando da posição 1.
 * Encontrar a posição de um item;
-    *  declamos uma variavel para receber a posição do ele mento e o igualamos a o array, depois seleciona o array e depois coloca o metodo ``indexOf()``, nós colocamos o que quemos encontra dentro do array, se fosse um numero seria o numero que queremos encontrar, se for uma string colocamos a string e assim em diante;
+    *  declamos uma variavel para receber a posição do elemento e o igualamos a o array, seleciona o array e depois coloca o metodo `indexOf()`, nós colocamos o que queremos encontrar dentro do array, se fosse um numero seria o numero que queremos encontrar, se for uma string colocamos a string e assim em diante;
         ```js
             let index = array.indexOf("oi")
 
