@@ -69,7 +69,7 @@ Nesta parte temos os tipos de dados que exitem no JS.
 
 ### Number
 
-São numeros como os que estamos habituados o js são eles
+São numeros como os que estamos habituados no js são eles
 * Inteiros = 1 ;
 * reais/float = 5.5(no js os numeros reais tem o ``"."`` ao inves da ``","`` );
 * NaN = Not a number = normalmente ocorre quando ha algo de errado com a operação executada;
@@ -79,7 +79,7 @@ São numeros como os que estamos habituados o js são eles
 ### Boolean
 
 Tem apenas dois valores
-* Verdadeido / true
+* Verdadeiro / true
 * Falso / false
 
 * É muito utilizado dentro da programação, pois ele nos possibilita fazer caminhos dentro da nossa aplicação dependendo se uma afimação é falsa ou verdadeira.
@@ -100,7 +100,7 @@ Tem apenas dois valores
 
 * É um objeto e nele se contem as propriedade e sua funcionalidade/metodos
 
-* O objeto do js definido assim:
+* O objeto do js é definido assim:
 * ``{name: thiago}`` sendo que ``"name"`` é uma propriedade e valor dessa propriedade é ``"thiago"``
 * o objeto pode ter mais de uma propriedade e valor tbm
     ``` js
@@ -113,12 +113,12 @@ Tem apenas dois valores
 * estes ajudam a definir este objeto
     * o que ele é?
     * o que ele faz?
-    * da onde ele veio? l
+    * da onde ele veio? 
     
 ### Array(vetores)
 
-* O array por si só é uma definido como uma lista ou agrupamento de dados
-* Normalmente usado quandro precisamos catalogar diversas infomações sobre algo
+* O array por si só é definido como uma lista ou agrupamento de dados
+* Normalmente usando quando precisamos catalogar diversas infomações sobre algo
 
 ``` js       
      console.log(["
@@ -129,21 +129,21 @@ Tem apenas dois valores
 ```
 
 * Funciona com quebra de linhas
-* Ele pega onformações de acordo com os tipos de dados apresentado anteriormente: string, number etc.
+* Ele pega informações de acordo com os tipos de dados apresentado anteriormente: string, number etc.
 
 ## Variaveis
 
 Variaveis são espaços na memoria onde é possivel guardar coisas, como textos, imagens, numeros entre outros.
 
 * Tambem podemos usar variaveis como atalhos de código
-* 3 palavras reservadas para criar uma variavel
-    * var // cria uma variavel global que pode ser acessada em varios locais do codigo
-    * let // cria uma variavel local a certa parte do cogido
-    * cont // cria uma variavel local que não pode ter seu valor alterado apos sua definição
+* Temos 3 palavras reservadas para criar uma variavel
+    * `var` // cria uma variavel global que pode ser acessada em varios locais do codigo
+    * `let` // cria uma variavel local destinada a certa parte do cogido
+    * `cont` // cria uma variavel local que não pode ter seu valor alterado após sua definição
 
 ### Tipos dinamicos
 
-- Variaveis não precisam ter um tipo previamente definido
+- Variaveis que não precisam ter um tipo previamente definido
 - Podemos mudar o conteudo da variável e essa mudança pode acabar mudando o seu tipo
 
 ## Scopo
@@ -155,17 +155,17 @@ Variaveis são espaços na memoria onde é possivel guardar coisas, como textos,
 ```js
 // vamos iniciar um bloco
 {
-    //Aqui dentro é um vlovo e posso colocar qualquer codigo
+    //Aqui dentro é um bloco e posso colocar qualquer codigo
 
 }   //aqui fechamos o bloco
 ```
-* Toda vez que criamosum bloco criamos um novo escopo.
+* Toda vez que criamos um bloco criamos um novo escopo.
 * hoisting é a elevação de uma parte do codigo, feita pelo proprio JS em segundo plano.
 
-## Nomenado variaveis
+## Nomeando variaveis
 
-* JS é case-sensitive, em outras palavas, se houver uma letra maiuscula e vai perceber ela como maiuscula, ao inves de a transformar em minuscula e vice-versa
-*  JS aceita a cadeia de caracteres Unicode, ou seja, aceita ``"`` e outros caracteres especias 
+* JS é case-sensitive, em outras palavas, se houver uma letra maiuscula ele vai perceber ela como maiuscula, ao inves de a transformar em minuscula e vice-versa
+*  JS aceita a cadeia de caracteres Unicode, ou seja, aceita `"` e outros caracteres especias 
 
 - Posso
     * Iniciar com esse caracteres espericais:``$`` ``_``
